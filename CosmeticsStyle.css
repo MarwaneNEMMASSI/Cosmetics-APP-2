@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body
+{
+    background-color: #EFF5F5;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #D6E4E5;
+    width: 80%;
+    border-radius: 2vh;
+}
+
+#container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+table
+{
+    margin-top: 5vh;
+}
+table, td, tr, th
+{
+    font-family: 'Poppins';
+}
+
+tr
+{
+    text-align: center;
+}
+th
+{
+    background-color: #EFF5F5;
+    border-top-right-radius: 50px 50px;
+    border-bottom-left-radius: 50px 50px;
+}
+#ajouter, #modifier
+{
+    margin-top: 5vh;
+}
+.display
+{
+    display: none;
+}
+.valid
+{
+    border: 2px solid darkgreen !important;
+    color: darkgreen;
+}
+.invalid
+{
+    border: 2px solid indianred !important;
+    color: indianred;
+}
+#ProductName, #Prix, #ListeDeMarques, #Date, #TypesDeProduits
+{
+    outline: none;
+}
+#container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#Table
+{
+    background-color: #D6E4E5;
+    margin-top: 10vh;
+    width: 80%;
+    border-radius: 2vh;
+}
+#Tableau
+{
+    width: 80%;
+    margin-left: 10%;
+}
+#modifier, #ajouter
+{
+    margin-left: 10%;
+}
+
+input:not(#oui, #non)
+{
+    width: 60%;
+    height: 4vh;
+}
+input:not(#non)
+{
+    margin-left: 20%; ;
+}
+select
+{
+    width: 61%;
+    height: 4vh;
+    margin-left: 20%;
+}
+p
+{
+    margin-left: 20%;
+    font-family: 'Poppins';
+}
+label
+{
+    font-family: 'Poppins';
+}
+label:not(#yes, #no)
+{
+    margin-left: 20%;
+}
+#AddButtonErrorMessage, #ModifyButtonErrorMessage
+{
+    color: indianred;
+    font-size: 10px;
+    margin-left: 10%;
+    font-family: 'Poppins';
+}
+#nom
+{
+    margin-top: 5vh;
+}
+#radio
+{
+    margin-bottom: 5vh;
+}
+#ButtonContainer
+{
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 5vh;
+}

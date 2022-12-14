@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>App Cosmetique</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CosmeticsStyle.css">
+    </head>
+    <body>
+        
+        <div id="container">
+        <form id="formulaire">
+            <label for="NomDuProduit" id="nom">Nom</label>
+            <input type="text" id="ProductName" name="NomDuProduit">
+            <label for="NomDeMarque">Marque</label>
+            <select name="NomDeMarque" id="ListeDeMarques">
+                <option value=""></option>
+                <option value="">Dior</option>
+                <option value="">Gucci</option>
+                <option value="">Coco chanel</option>
+                <option value="">Morganic</option>
+                <option value="">Zara</option>
+            </select>
+            <label for="Prix">Prix</label>
+            <input type="number" id="Prix" name="Prix">
+            <label for="DateDeProduction">Date de production</label>
+            <input type="date" id="Date">
+            <label for="">Type de Produits</label>
+            <select name="TypeDeProduit" id="TypesDeProduits">
+                <option value=""></option>
+                <option value="">Hygiène et toilette</option>
+                <option value="">Produits solaires</option>
+                <option value="">Soins esthétiques</option>
+                <option value="">Beauté des mains et des pieds</option>
+                <option value="">Produits de maquillages</option>
+                <option value="">Entretien Capillaire</option>
+                <option value="">Parfums</option>
+            </select>
+            <div>
+            <p>Article en promotion :</p>
+                <div id="radio">
+                <input type="radio" id="oui" name="promo">
+                <label for="oui" id="yes">Oui</label>
+                <input type="radio" id="non" name="promo">
+                <label for="radio" id="no">Non</label>
+                </div>
+                
+            
+            
+            </div>
+        </form>
+        <div id="Table">
+        <table id="Tableau">
+            <thead>
+            <tr>
+                <th>Nom du produit</th>
+                <th>Marque</th>
+                <th>Prix</th> 
+                <th>Date de production</th>
+                <th>Type de produit</th>
+                <th>Promotion</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="body"></tbody>
+        </table>
+
+        <div id="ButtonContainer">
+            <div>
+                <button id="ajouter">Ajouter</button>
+                <p id="AddButtonErrorMessage"></p>
+            </div>
+            <div>
+                <button id="modifier" class="display" >Modifier</button>
+                <p id="ModifyButtonErrorMessage"></p>
+            </div>
+        </div>
+        
+        
+    </div>
+    </div>
+    </body>
+
+    <script src="cosmeticsv2.js"></script>
+</html>
